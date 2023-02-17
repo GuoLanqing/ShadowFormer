@@ -8,8 +8,7 @@ This is the official implementation of the AAAI 2023 paper [ShadowFormer: Global
 ## Introduction
 To trackle image shadow removal problem, we propose a novel transformer-based method, dubbed ShadowFormer, for exploiting non-shadow
 regions to help shadow region restoration. A multi-scale channel attention framework is employed to hierarchically
-capture the global information. Based on that, we propose a Shadow-Interaction Module (SIM) with Shadow-Interaction Attention (SIA) in the bottleneck stage to ef-
-fectively model the context correlation between shadow and non-shadow regions. 
+capture the global information. Based on that, we propose a Shadow-Interaction Module (SIM) with Shadow-Interaction Attention (SIA) in the bottleneck stage to effectively model the context correlation between shadow and non-shadow regions. 
 For more details, please refer to our [orginal paper](https://arxiv.org/pdf/2302.01650.pdf)
 
 <p align=center><img width="80%" src="doc/pipeline.jpg"/></p>
@@ -36,12 +35,38 @@ Please download the corresponding pretrained model and modify the `weights` in `
 
 ## Test
 You can directly test the performance of the pre-trained model as follows
+1. Modify the paths to dataset and pre-trained model. You need to modify the following path in the `test.py` 
+```
+input_dir # shadow image input path -- Line 27
+weights # pretrained model path -- Line 31
+```
+2. Test the model
+```
+python test.py
+```
+You can check the output in `./results`.
 
 ## Train
 
 ## Evaluation
+The results reported in the paper are calculated by the `matlab` script used in [previous method](https://github.com/zhuyr97/AAAI2022_Unfolding_Network_Shadow_Removal/tree/master/codes). Details refer to `evaluation/measure_shadow.m` file.
 
 ## Results
+#### Evaluation on ISTD
+The evauluation results on ISTD are as follows
+| Method | PSNR | SSIM | RMSE |
+| :-- | :--: | :--: | :--: |
+| ST-CGAN | 27.44 | 0.929 | 6.65 |
+| DSC | 29.00 | 0.944 | 5.59 |
+| DHAN | 29.11 | 0.954 | 5.66 |
+| Fu et al. | 27.19 | 0.945 | 5.88 |
+| Zhu et al. | 29.85 | 0.960 | 4.27 |
+| **ShadowFormer (Ours)** | **32.21** | **0.968** | **4.09** |
+
+#### Visual Results
+
+#### Testing results
+The testing results on dataset ISTD, ISTD+, SRD are: [results]()
 
 ## References
 Our implementation is based on [Uformer](https://github.com/ZhendongWang6/Uformer). We would like to thank them.
