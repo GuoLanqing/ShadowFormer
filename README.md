@@ -36,17 +36,39 @@ Please download the corresponding pretrained model and modify the `weights` in `
 ## Test
 You can directly test the performance of the pre-trained model as follows
 1. Modify the paths to dataset and pre-trained model. You need to modify the following path in the `test.py` 
-```
+```python
 input_dir # shadow image input path -- Line 27
 weights # pretrained model path -- Line 31
 ```
 2. Test the model
-```
+```python
 python test.py --save_images
 ```
 You can check the output in `./results`.
 
 ## Train
+1. Download datasets and 
+```
+|-- ISTD_Dataset
+    |-- train
+        |-- train_A # shadow image
+        |-- train_B # shadow mask
+        |-- train_C # shadow-free GT
+    |-- test
+        |-- test_A # shadow image
+        |-- test_B # shadow mask
+        |-- test_C # shadow-free GT
+```
+2. You need to modify the following terms in `option.py`
+```python
+train_dir  # training set path
+val_dir   # testing set path
+gpu: 0 # Our model can be trained using a single RTX A5000 GPU. You can also train the model using multiple GPUs by adding more GPU ids in it.
+```
+3. Train the network.
+```python
+python train.py --warmup
+```
 
 ## Evaluation
 The results reported in the paper are calculated by the `matlab` script used in [previous method](https://github.com/zhuyr97/AAAI2022_Unfolding_Network_Shadow_Removal/tree/master/codes). Details refer to `evaluation/measure_shadow.m`.
