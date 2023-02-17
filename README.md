@@ -65,7 +65,7 @@ train_dir  # training set path
 val_dir   # testing set path
 gpu: 0 # Our model can be trained using a single RTX A5000 GPU. You can also train the model using multiple GPUs by adding more GPU ids in it.
 ```
-3. Train the network.
+3. Train the network
 ```python
 python train.py --warmup
 ```
