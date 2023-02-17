@@ -42,7 +42,7 @@ weights # pretrained model path -- Line 31
 ```
 2. Test the model
 ```
-python test.py
+python test.py --save_images
 ```
 You can check the output in `./results`.
 
