@@ -47,7 +47,7 @@ python test.py --save_images
 You can check the output in `./results`.
 
 ## Train
-1. Download datasets and 
+1. Download datasets and set the following structure
 ```
 |-- ISTD_Dataset
     |-- train
