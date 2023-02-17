@@ -49,7 +49,7 @@ You can check the output in `./results`.
 ## Train
 
 ## Evaluation
-The results reported in the paper are calculated by the `matlab` script used in [previous method](https://github.com/zhuyr97/AAAI2022_Unfolding_Network_Shadow_Removal/tree/master/codes). Details refer to `evaluation/measure_shadow.m` file.
+The results reported in the paper are calculated by the `matlab` script used in [previous method](https://github.com/zhuyr97/AAAI2022_Unfolding_Network_Shadow_Removal/tree/master/codes). Details refer to `evaluation/measure_shadow.m`.
 
 ## Results
 #### Evaluation on ISTD
@@ -64,6 +64,7 @@ The evauluation results on ISTD are as follows
 | **ShadowFormer (Ours)** | **32.21** | **0.968** | **4.09** |
 
 #### Visual Results
+<p align=center><img width="80%" src="doc/res.jpg"/></p>
 
 #### Testing results
 The testing results on dataset ISTD, ISTD+, SRD are: [results]()
