@@ -11,8 +11,6 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 # from ptflops import get_model_complexity_info
 
-sys.path.append('/home/wangzd/uformer/')
-
 import scipy.io as sio
 from utils.loader import get_validation_data
 import utils
@@ -29,7 +27,7 @@ parser.add_argument('--input_dir', default='../ISTD_Dataset/test/',
     type=str, help='Directory of validation images')
 parser.add_argument('--result_dir', default='./results/',
     type=str, help='Directory for results')
-parser.add_argument('--weights', default='/home/lanqing/projects/ShadowFormer/log/ShadowFormer_istd2/models/model_best.pth',
+parser.add_argument('--weights', default='./log/ShadowFormer_istd/models/model_best.pth',
     type=str, help='Path to weights')
 parser.add_argument('--gpus', default='0', type=str, help='CUDA_VISIBLE_DEVICES')
 parser.add_argument('--arch', default='ShadowFormer', type=str, help='arch')
@@ -61,7 +59,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
 utils.mkdir(args.result_dir)
 
 test_dataset = get_validation_data(args.input_dir)
-test_loader = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False, num_workers=0, drop_last=False)
+test_loader = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False, num_workers=8, drop_last=False)
 
 model_restoration = utils.get_arch(args)
 model_restoration = torch.nn.DataParallel(model_restoration)
