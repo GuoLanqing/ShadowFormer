@@ -80,6 +80,7 @@ python train.py --warmup --win_size 10 --train_ps 320
 
 ## Evaluation
 The results reported in the paper are calculated by the `matlab` script used in [previous method](https://github.com/zhuyr97/AAAI2022_Unfolding_Network_Shadow_Removal/tree/master/codes). Details refer to `evaluation/measure_shadow.m`.
+We also provide the `python` code for calculating the metrics in `test.py`, using `python test.py --cal_metrics` to print.
 
 ## Results
 #### Evaluation on ISTD
