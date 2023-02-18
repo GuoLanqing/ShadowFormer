@@ -5,6 +5,9 @@ This is the official implementation of the AAAI 2023 paper [ShadowFormer: Global
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shadowformer-global-context-helps-image/shadow-removal-on-adjusted-istd)](https://paperswithcode.com/sota/shadow-removal-on-adjusted-istd?p=shadowformer-global-context-helps-image)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shadowformer-global-context-helps-image/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=shadowformer-global-context-helps-image)
 
+#### News
+* **Feb 17, 2023**: Add the testing results and the description of our work.
+
 ## Introduction
 To trackle image shadow removal problem, we propose a novel transformer-based method, dubbed ShadowFormer, for exploiting non-shadow
 regions to help shadow region restoration. A multi-scale channel attention framework is employed to hierarchically
