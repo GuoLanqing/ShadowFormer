@@ -97,7 +97,7 @@ The evauluation results on ISTD are as follows
 The testing results on dataset ISTD, ISTD+, SRD are: [results]()
 
 ## References
-Our implementation is based on [Uformer](https://github.com/ZhendongWang6/Uformer). We would like to thank them.
+Our implementation is based on [Uformer](https://github.com/ZhendongWang6/Uformer) and [Restormer](https://github.com/swz30/Restormer). We would like to thank them.
 
 Citation
 -----
