@@ -66,8 +66,13 @@ val_dir   # testing set path
 gpu: 0 # Our model can be trained using a single RTX A5000 GPU. You can also train the model using multiple GPUs by adding more GPU ids in it.
 ```
 3. Train the network
+If you want to train the network on 256X256 images:
 ```python
-python train.py --warmup
+python train.py --warmup --win_size 8 --train_ps 256
+```
+or you want to train on original resolution, e.g., 480X640 for ISTD:
+```python
+python train.py --warmup --win_size 10 --train_ps 320
 ```
 
 ## Evaluation
