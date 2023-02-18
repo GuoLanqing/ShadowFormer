@@ -94,7 +94,7 @@ The evauluation results on ISTD are as follows
 <p align=center><img width="80%" src="doc/res.jpg"/></p>
 
 #### Testing results
-The testing results on dataset ISTD, ISTD+, SRD are: [results]()
+The testing results on dataset ISTD, ISTD+, SRD are: [results](https://drive.google.com/file/d/1zcv7KBCIKgk-CGQJCWnM2YAKcSAj8Sc4/view?usp=share_link)
 
 ## References
 Our implementation is based on [Uformer](https://github.com/ZhendongWang6/Uformer) and [Restormer](https://github.com/swz30/Restormer). We would like to thank them.
