@@ -33,7 +33,7 @@ pip install -r requirements.txt
 * SRD (please email the [authors](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qu_DeshadowNet_A_Multi-Context_CVPR_2017_paper.pdf) to get assess)
 
 ## Pretrained models
-[ISTD]() | [ISTD+]() | [SRD]()
+[ISTD](https://drive.google.com/file/d/1ZTmgihIxpJrxk2rxbAao42lVXQxtasZO/view?usp=share_link) | [ISTD+]() | [SRD]()
 
 Please download the corresponding pretrained model and modify the `weights` in `test.py`.
 
