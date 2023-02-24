@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Datasets
 * ISTD [[link]](https://github.com/DeepInsight-PCALab/ST-CGAN)  
 * ISTD+ [[link]](https://github.com/cvlab-stonybrook/SID)
-* SRD [[link]](https://liangqiong.github.io/publications/)
+* SRD [[Training]](https://drive.google.com/file/d/1W8vBRJYDG9imMgr9I2XaA13tlFIEHOjS/view)[[Testing]](https://drive.google.com/file/d/1GTi4BmQ0SJ7diDMmf-b7x2VismmXtfTo/view)
 
 ## Pretrained models
 [ISTD]() | [ISTD+]() | [SRD]()
