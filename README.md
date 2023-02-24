@@ -6,6 +6,7 @@ This is the official implementation of the AAAI 2023 paper [ShadowFormer: Global
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shadowformer-global-context-helps-image/shadow-removal-on-srd)](https://paperswithcode.com/sota/shadow-removal-on-srd?p=shadowformer-global-context-helps-image)
 
 #### News
+* **Feb 24, 2023**: Release the pretrained models for ISTD and ISTD+.
 * **Feb 18, 2023**: Release the training and testing codes.
 * **Feb 17, 2023**: Add the testing results and the description of our work.
 
