@@ -11,10 +11,10 @@ This is the official implementation of the AAAI 2023 paper [ShadowFormer: Global
 * **Feb 17, 2023**: Add the testing results and the description of our work.
 
 ## Introduction
-To trackle image shadow removal problem, we propose a novel transformer-based method, dubbed ShadowFormer, for exploiting non-shadow
+To tackle image shadow removal problem, we propose a novel transformer-based method, dubbed ShadowFormer, for exploiting non-shadow
 regions to help shadow region restoration. A multi-scale channel attention framework is employed to hierarchically
 capture the global information. Based on that, we propose a Shadow-Interaction Module (SIM) with Shadow-Interaction Attention (SIA) in the bottleneck stage to effectively model the context correlation between shadow and non-shadow regions. 
-For more details, please refer to our [orginal paper](https://arxiv.org/pdf/2302.01650.pdf)
+For more details, please refer to our [original paper](https://arxiv.org/pdf/2302.01650.pdf)
 
 <p align=center><img width="80%" src="doc/pipeline.jpg"/></p>
 
@@ -86,7 +86,7 @@ We also provide the `python` code for calculating the metrics in `test.py`, usin
 
 ## Results
 #### Evaluation on ISTD
-The evauluation results on ISTD are as follows
+The evaluation results on ISTD are as follows
 | Method | PSNR | SSIM | RMSE |
 | :-- | :--: | :--: | :--: |
 | ST-CGAN | 27.44 | 0.929 | 6.65 |
